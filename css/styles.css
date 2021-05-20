@@ -1,5 +1,5 @@
 .navbar-dark {
-    background-color: #346ff8;
+    background-color: #1f3658;
 }
 
 body {
@@ -30,4 +30,11 @@ body {
 .row-header {
     margin: 0px auto;
     padding: 0px 0px;
+}
+.card-img-top{
+height: 150px;
+width: 150px;
+}
+.card{
+    background-color: whitesmoke;
 }
