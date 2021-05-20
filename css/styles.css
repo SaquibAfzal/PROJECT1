@@ -36,7 +36,14 @@ body {
     height: 150px;
     width: 150px;
 }
+.img-top{
+    height: 250px;
+    width: 250px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
 
+}
 .card {
     background-color: whitesmoke;
     margin: 20px;
