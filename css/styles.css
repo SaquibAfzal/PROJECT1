@@ -1,0 +1,33 @@
+.navbar-dark {
+    background-color: #346ff8;
+}
+
+body {
+    padding: 50px 0px 0px 0px;
+}
+
+.jumbotron {
+    background-color: #65aff5;
+    margin: 0px auto;
+    padding: 70px 30px;
+}
+
+#jumbotrondesc {
+    font-size: x-large;
+}
+
+.nav-link {
+    font-size: x-large;
+    margin: 0px 25px;
+}
+
+.footer {
+    background-color: #bbdef1;
+    margin: 0px auto;
+    padding: 20px 0px;
+}
+
+.row-header {
+    margin: 0px auto;
+    padding: 0px 0px;
+}
