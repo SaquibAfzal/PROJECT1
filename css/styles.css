@@ -23,7 +23,7 @@ body {
 
 .footer {
     background-color: #bbdef1;
-    margin: 0px auto;
+    margin: 20px auto 0px auto;
     padding: 20px 0px;
 }
 
@@ -31,10 +31,21 @@ body {
     margin: 0px auto;
     padding: 0px 0px;
 }
-.card-img-top{
-height: 150px;
-width: 150px;
+
+.card-img-top {
+    height: 150px;
+    width: 150px;
 }
-.card{
+
+.card {
     background-color: whitesmoke;
+    margin: 20px;
+}
+
+.card .card-title {
+    text-align: center;
+}
+
+.btn-card {
+    margin: 10px;
 }
