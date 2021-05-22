@@ -26,19 +26,19 @@
             <div class="navbar-collapse collapse" id="navbar">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a href="./index.html"  class="nav-link">Home</a>
+                        <a href="./index.html" class="nav-link">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./html.html"  class="nav-link">HTML</a>
+                        <a href="./html.html" class="nav-link">HTML</a>
                     </li>
                     <li class="nav-item">
                         <a href="./css.html" class="nav-link active">CSS</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./js.html"  class="nav-link">JavaScript</a>
+                        <a href="./js.html" class="nav-link">JavaScript</a>
                     </li>
                     <li class="nav-item">
-                        <a href="./contact.html"  class="nav-link">Contact Us</a>
+                        <a href="./contact.html" class="nav-link">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,7 @@
         <div class="container">
             <div class="row row-header">
                 <div class="col-12 col-md-6 offset-md-3">
-                    <img class="img-top img-fluid"src="./images/css.png" alt="center-piece" >
+                    <img class="img-top img-fluid" src="./images/css.png" alt="center-piece">
                 </div>
                 <div class="col-12 col-md-3"><br></div>
                 <div id="jumbotrondesc" class="col-12 col-md-8 offset-md-2 text-center">
@@ -61,12 +61,73 @@
         </div>
     </div>
     <!-- JUMBOTRON END -->
+    <!-- BREADCRUMB START-->
     <div class="container">
         <div class="row">
             <ol class="col-12 breadcrumb">
                 <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
                 <li class="breadcrumb-item active">CSS</li>
             </ol>
+        </div>
+    </div>
+    <!-- BREADCRUMB END-->
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-md-3 col-sm" >
+                <h2>The 3 Types of CSS Styles: Internal, External, Inline.</h2>
+            </div>
+            <div class="col col-sm col-md">
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h4 class="mb-0">
+                            Internal CSS
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#">
+                        <div class="card-body">Internal or embedded CSS requires you to add &lt;style&gt; tag in
+                            the &lt;head&gt; section of your HTML document.
+
+                            This CSS style is an effective method of styling a single page. However, using this style
+                            for multiple pages is time-consuming as you need to put CSS rules to every page of your
+                            website. 
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h4 class="mb-0">
+                            External CSS
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#">
+                        <div class="card-body">With external CSS, you’ll link your web pages to an external .css
+                            file, which can be created by any text editor in your device (e.g., Notepad++).
+
+                            This CSS type is a more efficient method, especially for styling a large website. By editing
+                            one .css file, you can change your entire site at once.
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h4 class="mb-0">
+                            Inline CSS
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#">
+                        <div class="card-body">Inline CSS is used to style a specific HTML element. For this CSS
+                            style, you’ll only need to add the style attribute to each HTML tag, without using
+                            selectors.
+
+                            This CSS type is not really recommended, as each HTML tag needs to be styled individually.
+                            Managing your website may become too hard if you only use inline CSS.
+
+                            However, inline CSS in HTML can be useful in some situations. For example, in cases where
+                            you don’t have access to CSS files or need to apply styles for a single element only.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
