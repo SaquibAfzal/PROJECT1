@@ -101,3 +101,10 @@ body {
 #T4H {
     background-color: #65aff5;
 }
+.navbar-toggler{
+    right: 0px;
+    margin-right: 10px;
+    top: 0;
+    margin-top: 10px;
+    position: absolute;
+}
