@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./highlights/default.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <link rel="stylesheet" href="./css/codestyle.css">
     <!-- <link rel="stylesheet" href="./css/prism.css"> -->
     <title>Guide to WebDevelopment-JavaScript</title>
 </head>
@@ -71,43 +73,58 @@
             </ol>
         </div>
 
-<!-- ACCORDION STARTS HERE  -->
-
-<DIV id="accordion" class="accordion">
-    <div class="card">
-        <div role="tab" class="card-header collapsed" id="T1H">
-            <h3>
-                <h3>
-                    <a style="color: white;" class="btn" type="button" data-toggle="collapse" data-target="#T1"
-                        aria-expanded="true" aria-controls="T1">
-                        <Strong class="carh">Functions</Strong>
-                    </a>
-                </h3>
-            </h3>
+        <div class="container">
+            <div class="row-header row">
+                <h1 class="col-12">
+                    What is JavaScript?
+                </h1>
+                <div class="col-12">
+                    <div class="card">
+                        <div class="card-header bg-custom1 col-12">
+                            <h1 class="card-title text-white" style="text-align: left;">
+                                <strong class="carh">Introduction to JavaScript</strong>
+                            </h1>
+                        </div>
+                        <div class="card-body col-12">
+                            JavaScript often abbreviated as JS, is a programming language that
+                            conforms to the ECMAScript specification. JavaScript is high-level, often just-in-time
+                            compiled, and multi-paradigm. It has curly-bracket syntax, dynamic typing, prototype-based
+                            object-orientation, and first-class functions.
+                            <br>
+                            Alongside HTML and CSS, JavaScript is one of the core technologies of the World Wide
+                            Web. Over 97% of websites use it client-side for web page behavior, often
+                            incorporating third-party libraries. All major web browsers have a dedicated JavaScript
+                            engine to execute the code on the user's device.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="T1" class="collapse show" data-parent="accordion">
-            <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#T1exp" class="nav-link" role="tab"
-                            data-toggle="tab"><strong>Explanation</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#T1eg" class="nav-link" role="tab" data-toggle="tab"><strong>Example</strong></a>
-                    </li>
-                </ul>
-                <div id="content" class="tab-content" role="tablist">
-                    <div id="T1exp" role="tabpanel" class="tab-pane fade show active">
-                        <p>
+    </div>
+    <br><br>
+
+    <div class="container">
+        <div class="row row-header">
+            <!-- CARD1 -->
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h1 class="card-title text-white" style="text-align: left;">Functions</h1>
+                    </div>
+                    <div class="card-body">
+                        <h3><Strong>Explanation</Strong></h3>
+                        <div>
                             A JavaScript function is a block of code designed to perform a particular task.
                             <br>
                             A JavaScript function is executed when "something" invokes it (calls it).
-                        </p>
-                        <p>
-                            A JavaScript function is defined with the function keyword, followed by a name, followed
+                            <br>
+                            A JavaScript function is defined with the function keyword, followed by a name,
+                            followed
                             by parentheses ().
                             <br>
-                            Function names can contain letters, digits, underscores, and dollar signs (same rules as
+                            Function names can contain letters, digits, underscores, and dollar signs (same
+                            rules as
                             variables).
                             <br>
                             The parentheses may include parameter names separated by commas:
@@ -123,24 +140,27 @@
                             <br>
                             When JavaScript reaches a return statement, the function will stop executing.
                             <br>
-                            If the function was invoked from a statement, JavaScript will "return" to execute the
+                            If the function was invoked from a statement, JavaScript will "return" to execute
+                            the
                             code after the invoking statement.
                             <br>
                             Functions often compute a return value. The return value is "returned" back to the
                             "caller":
                             <br>
-                            The code inside the function will execute when "something" invokes (calls) the function:
-                        <ul>
-                            <li>When an event occurs (when a user clicks a button)</li>
-                            <li>When it is invoked (called) from JavaScript code</li>
-                            <li>Automatically (self invoked)</li>
-                        </ul>
-                        </p>
-                    </div>
-                    <pre id="T1eg" role="tabpanel" class="tab-pane fade bg-white">
-                        <code class="language-javascript snip">
-// Write a JavaScript function that checks whether a passed string is palindrome or not? 
-
+                            The code inside the function will execute when "something" invokes (calls) the
+                            function:
+                            <ul>
+                                <li>When an event occurs (when a user clicks a button)</li>
+                                <li>When it is invoked (called) from JavaScript code</li>
+                                <li>Automatically (self invoked)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3><Strong>Example</Strong></h3>
+                            <p>
+                                JavaScript function that checks whether a passed string is palindrome or not.
+                            </p>
+                            <pre class="prettyprint">
 function check_Palindrome(str_entry){
 // Change the string into lower case and remove  all non-alphanumeric characters
 var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
@@ -164,7 +184,7 @@ if ((cstr.length) % 2 === 0) {
     }
 }
 // Loop through to check the first character to the last character and then move next
-for (var x = 0; x < ccount; x++) {
+for (var x = 0; x &lt; ccount; x++) {
 // Compare characters and drop them if they do not match 
     if (cstr[x] != cstr.slice(-1-x)[0]) {
         console.log("Entry is not a palindrome.");
@@ -176,71 +196,59 @@ return true;
 }
 check_Palindrome('madam');
 check_Palindrome('nurses run');
-check_Palindrome('fox');
-
-
-</code>
-<strong>Output:</strong>
-The entry is a palindrome.
-The entry is a palindrome.
-Entry is not a palindrome.
-                    </pre>
+check_Palindrome('fox'); 
+</pre>
+                            <strong>Output:</strong><br>
+                            The entry is a palindrome. <br>
+                            The entry is a palindrome. <br>
+                            Entry is not a palindrome. <br>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div role="tab" class="card-header collapsed" id="T2H">
-            <h3>
-                <a style="color: white;" class="btn" type="button" data-toggle="collapse" data-target="#T2"
-                    aria-expanded="true" aria-controls="T2">
-                    <Strong class="carh">Conditions and loops</Strong>
-                </a>
-            </h3>
-        </div>
-        <div id="T2" class="collapse show" data-parent="accordion">
-            <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#T2exp" class="nav-link" role="tab"
-                            data-toggle="tab"><strong>Explanation</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#T2eg" class="nav-link" role="tab" data-toggle="tab"><strong>Example</strong></a>
-                    </li>
-                </ul>
-                <div id="content" class="tab-content" role="tablist">
-                    <div id="T2exp" role="tabpanel" class="tab-pane fade show active">
-                        Very often when you write code, you want the same block of code to run a number of times.
-                        You can use looping statements in your code to do this.
-                        <br>
-                        In JavaScript we have the following looping statements:
-                        <ul>
-                            <li><strong>while</strong> - loops through a block of code while a condition is true
-                            </li>
-                            <li><strong>do-while</strong> - loops through a block of code once, and then repeats the
-                                loop while a condition is true</li>
-                            <li><strong>for</strong> - run statements a specified number of times</li>
-                        </ul>
-                        <br>
-                        And you also want to perform different actions for different decisions. You can use
-                        conditional statements in your code to do this.
-                        <br>
-                        In JavaScript we have three conditional statements:
-                        <ul>
-                            <li><strong>if statement</strong> - use this statement if you want to execute a set of
-                                code when a condition is true</li>
-                            <li><strong>if-else statement</strong> - use this statement if you want to select one of
-                                two sets of lines to execute</li>
-                            <li><strong>switch statement</strong> - use this statement if you want to select one of
-                                many sets of lines to execute</li>
-                        </ul>
+            <!-- CARD1 -->
+
+            <!-- CARD2 -->
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h1 class="card-title text-white" style="text-align: left;">Conditions and loops</h1>
                     </div>
-                    <pre id="T2eg" role="tabpanel" class="tab-pane fade bg-white">
-                            <code class="language-javascript snip">
-//JavaScript: Find and print the first 5 happy numbers
-
-
+                    <div class="card-body">
+                        <h3><Strong>Explanation</Strong></h3>
+                        <div>
+                            Very often when you write code, you want the same block of code to run a number of times.
+                            You can use looping statements in your code to do this.
+                            <br>
+                            In JavaScript we have the following looping statements:
+                            <ul>
+                                <li><strong>while</strong> - loops through a block of code while a condition is true
+                                </li>
+                                <li><strong>do-while</strong> - loops through a block of code once, and then repeats the
+                                    loop while a condition is true</li>
+                                <li><strong>for</strong> - run statements a specified number of times</li>
+                            </ul>
+                            <br>
+                            And you also want to perform different actions for different decisions. You can use
+                            conditional statements in your code to do this.
+                            <br>
+                            In JavaScript we have three conditional statements:
+                            <ul>
+                                <li><strong>if statement</strong> - use this statement if you want to execute a set of
+                                    code when a condition is true</li>
+                                <li><strong>if-else statement</strong> - use this statement if you want to select one of
+                                    two sets of lines to execute</li>
+                                <li><strong>switch statement</strong> - use this statement if you want to select one of
+                                    many sets of lines to execute</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3><Strong>Example</Strong></h3>
+                            <p>
+                                JavaScript: Find and print the first 5 happy numbers
+                            </p>
+                            <pre class="prettyprint">
 function happy_number(num) 
 {
 var m, n ;
@@ -272,54 +280,42 @@ f5 = f5+(num + ", ") ;
 num++ ;
 }
 console.log('First 5 happy numbers are : '+f5);
-
-
-</code>
-<Strong>Output</Strong>
-First 5 happy numbers are : 1, 7, 10, 13, 19, 
-                        </pre>
+</pre>
+                            <strong>Output:</strong><br>
+                            First 5 happy numbers are : 1, 7, 10, 13, 19,
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div role="tab" class="card-header collapsed" id="T3H">
-            <h3>
-                <a style="color: white;" class="btn" type="button" data-toggle="collapse" data-target="#T3"
-                    aria-expanded="true" aria-controls="T3">
-                    <Strong class="carh">Arrays</Strong>
-                </a>
-            </h3>
-        </div>
-        <div id="T3" class="collapse show" data-parent="accordion">
-            <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#T3exp" class="nav-link" role="tab"
-                            data-toggle="tab"><strong>Explanation</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#T3eg" class="nav-link" role="tab" data-toggle="tab"><strong>Example</strong></a>
-                    </li>
-                </ul>
-                <div id="content" class="tab-content" role="tablist">
-                    <div id="T3exp" role="tabpanel" class="tab-pane fade show active">
-                        JavaScript arrays are used to store multiple values in a single variable.
-                        <br>
-                        An array is a special variable, which can hold more than one value at a time.
-                        <br>
-                        There are 3 ways to construct array in JavaScript:
-                        <ul>
-                            <li>By array literal</li>
-                            <li>By creating instance of Array directly (using new keyword)</li>
-                            <li>By using an Array constructor (using new keyword)</li>
-                        </ul>
+            <!-- CARD2 -->
+
+            <!-- CARD3 -->
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h1 class="card-title text-white" style="text-align: left;">Arrays</h1>
                     </div>
-                    <pre id="T3eg" role="tabpanel" class="tab-pane fade bg-white">
-                            <code class="language-javascript snip">
-//JavaScript: Sort the items of an array
-
-
+                    <div class="card-body">
+                        <h3><Strong>Explanation</Strong></h3>
+                        <div>
+                            JavaScript arrays are used to store multiple values in a single variable.
+                            <br>
+                            An array is a special variable, which can hold more than one value at a time.
+                            <br>
+                            There are 3 ways to construct array in JavaScript:
+                            <ul>
+                                <li>By array literal</li>
+                                <li>By creating instance of Array directly (using new keyword)</li>
+                                <li>By using an Array constructor (using new keyword)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3><Strong>Example</Strong></h3>
+                            <p>
+                                JavaScript: Sort the items of an array
+                            </p>
+                            <pre class="prettyprint">
 var arr1=[-3,8,7,6,5,-4,3,2,1];
 var arr2=[];
 var min=arr1[0];
@@ -347,58 +343,46 @@ for (var j=0;j < arr1.length;j++)
     min=max;
 }
 console.log(arr2);
-
-
-</code>
-<Strong>Output</Strong>
-[-4,-3,1,2,3,5,6,7,8]
-                        </pre>
+</pre>
+                            <strong>Output:</strong><br>
+                            [-4,-3,1,2,3,5,6,7,8]
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <div class="card">
-        <div role="tab" class="card-header collapsed" id="T4H">
-            <h3>
-                <a style="color: white;" class="btn" type="button" data-toggle="collapse" data-target="#T4"
-                    aria-expanded="true" aria-controls="T4">
-                    <Strong class="carh">Objects</Strong>
-                </a>
-            </h3>
-        </div>
-        <div id="T4" class="collapse show" data-parent="accordion">
-            <div class="card-body">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a href="#T4exp" class="nav-link" role="tab"
-                            data-toggle="tab"><strong>Explanation</strong></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#T4eg" class="nav-link" role="tab" data-toggle="tab"><strong>Example</strong></a>
-                    </li>
-                </ul>
-                <div id="content" class="tab-content" role="tablist">
-                    <div id="T4exp" role="tabpanel" class="tab-pane fade show active">
-                        A javaScript object is an entity having state and behavior (properties and method). For
-                        example: car, pen, bike, chair, glass, keyboard, monitor etc.
-                        <br>
-                        JavaScript is an object-based language. Everything is an object in JavaScript.
-                        <br>
-                        JavaScript is template based not class based. Here, we don't create class to get the object.
-                        But, we direct create objects.
-                        <br>
-                        There are 3 ways to create objects.
-                        <ul>
-                            <li>By object literal</li>
-                            <li>By creating instance of Object directly (using new keyword)</li>
-                            <li>By using an object constructor (using new keyword)</li>
-                        </ul>
+            <!-- CARD3 -->
+
+            <!-- CARD4 -->
+
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-custom1">
+                        <h1 class="card-title text-white" style="text-align: left;">Objects</h1>
                     </div>
-                    <pre id="T4eg" role="tabpanel" class="tab-pane fade bg-white">
-                            <code class="language-javascript snip">
-//JavaScript: Gather and display infromation from an object
-
-
+                    <div class="card-body">
+                        <h3><Strong>Explanation</Strong></h3>
+                        <div>
+                            A javaScript object is an entity having state and behavior (properties and method). For
+                            example: car, pen, bike, chair, glass, keyboard, monitor etc.
+                            <br>
+                            JavaScript is an object-based language. Everything is an object in JavaScript.
+                            <br>
+                            JavaScript is template based not class based. Here, we don't create class to get the object.
+                            But, we direct create objects.
+                            <br>
+                            There are 3 ways to create objects.
+                            <ul>
+                                <li>By object literal</li>
+                                <li>By creating instance of Object directly (using new keyword)</li>
+                                <li>By using an object constructor (using new keyword)</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h3><Strong>Example</Strong></h3>
+                            <p>
+                                JavaScript: Gather and display infromation from an object
+                            </p>
+                            <pre class="prettyprint">
 var library = [ 
 {
     title: 'Bill Gates',
@@ -426,22 +410,21 @@ if (library[i].readingStatus) {
  console.log("You still need to read " + book);
 }
 }
-
-
-</code>
-<Strong>Output</Strong>
-Already read 'Bill Gates' by The Road Ahead.
-Already read 'Steve Jobs' by Walter Isaacson.
-You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins.
-                        </pre>
+</pre>
+                            <strong>Output:</strong><br>
+                            Already read 'Bill Gates' by The Road Ahead. <br>
+                            Already read 'Steve Jobs' by Walter Isaacson. <br>
+                            You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzanne Collins.
+                            <br>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- CARD4 -->
+
         </div>
     </div>
-</DIV>
-<!-- ACCORDION ENDS HERE  -->
 
-    
     <!-- FOOTER START -->
     <footer class="footer">
         <div class="container">
@@ -463,8 +446,7 @@ You still need to read 'Mockingjay: The Final Book of The Hunger Games' by Suzan
                 </div>
             </div>
         </div>
-        <button onclick="topFunction()" id="myBtn" title="Go to top"><i
-            class="fa fa-chevron-up fa-lg"></i></button>
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-chevron-up fa-lg"></i></button>
     </footer>
     <!-- FOOTER END -->
 
