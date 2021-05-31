@@ -125,3 +125,15 @@ body {
 #myBtn:hover {
     background-color: #555;
 }
+
+.bg-html {
+    background-color: #f47933;
+}
+
+.bg-css {
+    background-color: #008fd5;
+}
+
+.bg-js {
+    background-color: #f99d34;
+}
