@@ -137,3 +137,28 @@ body {
 .bg-js {
     background-color: #f99d34;
 }
+
+.carousel {
+    background: #65aff5;
+}
+
+.carousel .carousel-item {
+    height: 300px;
+}
+
+.carousel .carousel-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-height: 300px;
+    min-height: 300px;
+}
+
+#carouselButton {
+    right: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.carousel-caption h2,p{
+    color: black;
+}
